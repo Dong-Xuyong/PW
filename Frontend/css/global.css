@@ -1,0 +1,486 @@
+/* PlaceHolders */
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #BDBDBD;
+  opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #BDBDBD;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #BDBDBD;
+}
+
+/* Estilo Padrão */
+/*:root{*/
+/*  --primary-color: #E7E7E7;*/
+/*  --secondary-color: #AB0404;*/
+/*  --shadow-color: #777;*/
+/*  --font-color: #000000;*/
+/*  --background-color: #FFFFFF;*/
+/*  --white: #FFFFFF; */
+/*  --links-color: #AB0404;*/
+/*  --table-color: #f4f4f4;*/
+/*  --grafic-color: #DEDEDE;*/
+/*}*/
+ /*Estilo padrão para dark mode */
+/*:root{*/
+/*  --primary-color: #FFFFFF;*/
+/*  --secondary-color: #AB0404;*/
+/*  --shadow-color:  #777;*/
+/*  --font-color: #FFFFFF;*/
+/*  --background-color:#3D3D3D;*/
+/*  --white: #FFFFFF;*/
+/*  --links-color: #FFFFFF;*/
+/*  --table-color: #363535;*/
+/*  --grafic-color: #DEDEDE;*/
+/*}*/
+
+html {
+  background: var(--background-color);
+}
+
+/* Estilo da letra */
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--font-color);
+  align-items: center;
+}
+
+/* Títulos das páginas */
+.title {
+  font-size: 20px;
+}
+
+.textCenter{
+  width:100%;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+/* Alteração do estilo do cabeçalho */
+#app-header {
+  box-shadow: 0 5px 5px -5px var(--shadow-color);
+  position: fixed;
+  align-items: center;
+  z-index: 3;
+  background: var(--background-color);
+  width: 100%;
+}
+
+#app-header .container ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+#app-header ul a {
+    color: var(--font-color);
+}
+
+#app-header ul li {
+  position: relative;
+  top:50%;
+  bottom:50%;
+}
+
+/* Alteração do estilo do footer */
+#app-footer {
+  position:absolute; 
+  overflow:hidden;
+  box-shadow: 0 -5px 5px -5px var(--shadow-color);
+  position: fixed;
+  bottom: 0;
+  background: var(--background-color);
+  width: 100%;
+  z-index:5;
+}
+
+#app-footer ul {
+  padding: 0px;
+  margin:7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#app-footer ul a {
+  color: var(--font-color);
+}
+
+/* Padrões de ferramentas */
+a{
+  color: var(--links-color);
+  text-decoration:none;
+}
+
+a ul {
+  color: var(--links-color);
+  text-decoration:none;
+}
+
+a:hover {
+  color: var(--links-color);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  line-height: 30px;
+  padding: 3px;
+}
+
+button {
+  width: 230px;
+  height: 35px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  color: var(--white);
+  border:none;
+}
+
+/* Muda a cor do "certo" e da seta */
+.check{
+  color: var(--secondary-color);
+}
+
+ .rightArrow{
+ color: var(--secondary-color);
+ transform: rotate(180deg);
+}
+
+/*Estilo do input type range*/
+.slidecontainer {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slidecontainer p{
+  color: var(--shadow-color);
+  font-size: 14px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 180px;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #AB0404;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/* Estilo dos inputs*/
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="number"] {
+  max-height: 45px;
+  max-width: 350px;
+  width: 250px;
+  padding: 10px;
+}
+
+/* Checkbox */
+.form{
+  margin-top: 25px;
+}
+
+.checkbox-container {
+  display: flex;
+  padding: 3px;
+}
+
+.checkbox-container label {
+  cursor: pointer;
+  display: flex;
+}
+
+.checkbox-container input[type='checkbox'] {
+  cursor: pointer;
+  opacity: 0;
+}
+
+.checkbox-container label::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  margin-right: 7px;
+  border: 1px solid black;
+}
+
+.checkbox-container input[type='checkbox']:checked + label::before {
+  content: '\002714';
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/*Radio Button*/
+.stv-radio-buttons-wrapper input {
+  width: 1000px;
+}
+
+.stv-radio-button {
+  position: absolute;
+  left: -9999em;
+  top: -9999em;
+}
+
+.stv-radio-button + label {
+  float: left;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: none;
+  margin-right: -1px;
+  color: black;
+  font-size: 14px;
+  background-color: var(--background-color);
+}
+
+.stv-radio-button:checked + label {
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 2em;
+}
+
+/* Estilo dos títulos */
+h1 {
+  color: #5A5A5A;
+  font-size: 18px;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: Bold;
+  margin-top: 50px;
+}
+
+h3{
+  font-size: 16px;
+  margin-left: -40px;
+}
+
+h4{
+  margin-top: 10px;
+  color: var(--shadow-color);
+  font-size: 15px;
+}
+
+h5 {
+ font-weight: 600;
+ color: var(--font-color);
+ font-size: 20px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* Diferentes containers */
+.container-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Logotipo */
+.logoImg {
+  max-width: 146.37px;
+  max-height:143.01px;
+  margin-top: 60px;
+}
+
+/* Estilo das tabelas */
+table {
+  margin: 25px auto;
+  width: 90% !important;
+  border-collapse: collapse;
+  border: none !important;
+}
+
+table tr:hover {
+  background: var(--table-color);
+}
+
+table tr:hover td {
+  color: var(--font-color);
+}
+
+table th, table td {
+  color: var(--shadow-color);
+  border: 1px solid #eee;
+  border-bottom: none !important;
+  border-top: none !important;
+  padding: 12px 35px;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+table th {
+  background: var(--secondary-color);
+  color: var(--white);
+  /*text-transform: uppercase;*/
+  font-size: 12px;
+}
+
+table th.last {
+  border-right: none;
+}
+
+/* Zebra Striped Table */
+tr:nth-child(even) {
+  background-color: var(--background-color);
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child,
+table.Info tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+/* top-right border-radius */
+table tr:first-child th:last-child,
+table.Info tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+table td:first-child, th:first-child{
+  border: none !important;
+}
+
+table td:last-child, th:last-child{
+  border: none !important;
+}
+
+.table>tbody>tr>td{
+  vertical-align: middle;
+  width:100px;
+}
+
+.highlight {
+  background: rgba(181, 2, 2, 0.69) !important;
+}
+
+.btn-default {
+  width: 30px;
+  height: 30px;
+  background: var(--backgroud-color);
+  border: none;
+}
+
+/* Esconder o icon no header */
+.trafulha {
+  color: var(--background-color);
+}
+
+/*GPS*/
+#map{ 
+  position:absolute;
+  margin-top: 100px;
+  height:50%;
+  width:90%;
+  text-align:center;
+  justify-content:center;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-map-control-button {
+  appearance: button;
+  background-color: #fff;
+  border: 0;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin: 10px;
+  padding: 0 0.5em;
+  height: 40px;
+  font: 400 18px Roboto, Arial, sans-serif;
+  overflow: hidden;
+}
+.custom-map-control-button:hover {
+  background: #ebebeb;
+}
+
+/* Sweet Alert */
+/*.swal2-popup .swal2-styled.swal2-confirm{*/
+/*  width: 94px;*/
+/*  background-color: var(--secondary-color) !important;*/
+/*}*/
+
+/*.swal2-popup .swal2-styled.swal2-cancel {*/
+/*  width: 126px;*/
+/*  background-color: var(--shadow-color) !important;*/
+/*}*/
+
+.swal2-popup {
+  background: var(--background-color) !important;
+}
+
+.swal2-title {
+  color: var(--font-color) !important;
+}
+
+.swal2-content {
+  color: var(--font-color) !important;
+}

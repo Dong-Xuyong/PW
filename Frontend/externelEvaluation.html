@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/e195162fd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/global.css" type="text/css" />
+    <link rel="stylesheet" href="./css/forms.css" type="text/css" />
+    <link rel="stylesheet" href="./css/occurrence.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Avaliação externa</title>
+</head>
+
+<body>
+    
+    <div id="app-header">
+        <div class="container">
+            <ul>
+                <li><a id="back" class="button"><svg width="2em" height="2em" viewBox="0 0 16 16"
+                            class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+                        </svg></a></li>
+                <li>
+                    <p id="avaLocalExternalTxt" class="title textCenter">Avaliação externa</p>
+                </li>
+
+                <li><a id="submit" class="button"><svg class="check" width="2em" height="2em" viewBox="0 0 16 16"
+                            class="bi bi-check2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+                        </svg></a></li>
+            </ul>
+        </div>
+    </div>
+
+<div class="container-3">
+        <h5 id="title">Avaliação Externa:</h5>
+        <form id="myTable">
+            <div class="field" name="witnesses">
+                <div class="input-wrapper">
+                    <h4>Testemunho:</h4>
+                    <input type="text" class="testimony"><i class="fas fa-times icon"></i></input> 
+                </div>
+            </div>
+            <div class="field">
+                <div class="input-wrapper">
+                    <h4>Justificação:</h4>
+                    <input type="text" class="justification"/><i class="fas fa-times icon"></i></input> 
+                </div>
+            </div>
+        </form>
+<p>
+    <button class= "addAuditor" id="addAuditor">Adicionar testemunha</button>
+</p>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="module" src="./controller/externelReview.js"></script>
+<script type="module" src="./controller/set.theme.mode.js"></script>
+    
+</body>
+</html>

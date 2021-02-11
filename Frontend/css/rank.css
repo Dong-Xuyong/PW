@@ -1,0 +1,129 @@
+
+
+/*Estilo da pagina*/
+/*Tamanho das caixas */
+#boxWinnerOne{
+    width: 110px;
+    height: 175px;
+}
+
+#boxWinnerTwo {
+    width: 110px;
+    height: 150px;
+}
+
+#boxWinnerTree{
+    width: 110px;
+    height: 125px;
+}
+
+.container .box {
+    width: 330px;
+    height: 50px;
+}
+
+/* cor */
+.name {
+    color: var(--font-color);
+    font-size: 13px;
+    margin: 0px;
+}
+
+.points {
+    color: var(--links-color);
+}
+
+.box{
+    background: var(--table-color);
+    box-shadow: 0 0 5px var(--shadow-color);
+    border-radius: 8px;
+}
+
+
+/* posicoes */
+.topThree {
+    position: relative;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    width:  100%;
+    text-align: center;
+}
+
+/* Ordem */
+div#boxWinnerOne{order: 2;}
+div#boxWinnerTwo{order: 1;}
+div#boxWinnerTree{order: 3;}
+
+.topThree span{
+    position: relative;
+    right: 27px;
+    bottom: 64px;
+}
+
+
+.iconLaurem {
+    position: relative;
+    left: 7px;
+    bottom: 60px !important;
+}
+
+.container ul{
+    list-style: none;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.spaceOne{
+    position: relative;
+    left: 15px;
+    top:10px;
+    width: 25px;
+    /* background-color: antiquewhite; */
+}
+
+.spaceTwo{
+    position: relative;
+    left: 40px;
+    bottom: 30px;
+    width: 50px;
+    /* background-color: blue; */
+}
+
+.spaceThree {
+    position: relative;
+    left:100px;
+    bottom: 82px;
+    width: 200px;
+    /* background-color: cornflowerblue; */
+}
+
+.spaceFour {
+    position: relative;
+    bottom: 93px;
+    left: 100px;
+    width: 200px;
+    /* background-color: darkgreen; */
+}
+
+.spaceTopOne{
+    /* background-color: darkgreen; */
+    position: relative;
+    bottom: 45px;
+}
+
+.spaceTopTwo{
+    /* background-color: cornflowerblue; */
+    position: relative;
+    bottom: 45px;
+}
+
+.spaceTopThree{
+    /* background-color: blue; */
+    position: relative;
+    bottom: 45px;
+}

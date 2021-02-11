@@ -1,0 +1,242 @@
+/* Janela para avaliar a equipa - observações */
+#observacoes {
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+
+#obserTxt {
+    margin-left: 5px;
+}
+
+#equipaTxt {
+    margin-top: 65px;
+}
+
+/* Janela para avaliação individual - identificação do operacional */
+#rectangle {
+    width:270px; 
+    height:60px; 
+    border:1px solid;
+    margin-top: 60px;
+    border-radius: 20px
+}
+
+#marginPicture ul{
+    list-style: none;
+    display: flex;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+#pontosTxt {
+    margin-bottom: 60px;
+}
+
+/* Janela custo de ocorrência */
+#custoOcorrencia {
+    margin-top: 70px;
+}
+
+#formOccurrenceCost{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#custoTotal {
+    margin-bottom: 70px;
+}
+
+/* Janela para registo de colaboradores, checklist e membros da equipa */
+#registoColab, #registoTrabalho, #teamMember {
+    margin-top: 60px;
+}
+
+/* Janela de equipa e operação avaliada com sucesso */
+.submit {
+    margin-top: 30px;
+}
+
+/* Janela dados da ocorrência */
+.boxOne{
+    background-color: var(--background-color);
+    margin-bottom: 30px;
+    margin-top: 50px;
+    width: 300px;
+    height: 145px;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+.boxTwo, .boxThree{
+    display: flex;
+    align-items: center;
+    width: 315px;
+}
+
+.boxThree {
+    margin-bottom: 80px;
+}
+#itemOne, #itemThree{
+  position: relative;
+  left: 20px;
+}
+
+#itemTwo, #itemFour{
+  position: relative;
+  left: 50px;
+}
+
+#list3 li {
+    padding: 0px;
+}
+
+#workers {
+    font-size: 20px;
+}
+
+.resposta {
+    color: #AB0404;
+}
+
+/* Janela para confirmar a hora de chegada */
+#chegadaTxt {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#horas {
+    width: 170px;
+    background: var(--secondary-color);
+    font-size: 35px;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Janela para avaliação externa*/
+#title {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.icon{
+    position: absolute;
+    margin-left: 265px;
+    margin-top: -45px;
+}
+
+form input[type="text"] {
+    max-height: 70px;
+    height: 70px;
+}
+
+/* Janela da lista de ocorrências */
+.radioButtons {
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+#tableNot {
+    margin-top: -24px;
+    margin-bottom: 11px;
+}
+
+#ocorrence1Txt {
+    margin-top: 42px;
+}
+
+#tableDone {
+    margin-top: -24px;
+    margin-bottom: 100px;
+}
+/* Janela principal */
+#occurrences {
+    margin-top: 400px;
+    margin-bottom: 200px;
+    width: 200px;
+}
+
+#ham-button {
+    margin-top: 60px;
+    width: 47px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.side-menu a:hover {
+  background-color: darkred;
+  color: white;
+  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}
+
+/* Side Menu Container */
+.side-menu {
+  background-color: var(--table-color);
+  padding: 10px;
+  border-radius: 9px;
+  color: var(--font-color);
+  box-sizing: border-box;
+  max-width: 70%;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+/* Side Menu Links */
+.side-menu a {
+  display: block;
+  color: #818181;
+  padding: 8px;
+  font-size: 24px;
+  border-radius: 6px;
+}
+
+/* When mouse hover on links in side Menu */
+.side-menu a:hover {
+  background-color: darkred;
+  color: white;
+  -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+  transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}
+
+/* Side Menu Heading */
+.side-menu h3 {
+  padding: 5px;
+  margin-left: 20px;
+}
+
+/* Dashboard */
+#lineChart2 {
+    margin-bottom: 100px;
+}
+
+#invoice {
+    margin-bottom: 100px;
+}
+
+/*.addAuditor {*/
+/*    margin: 0;*/
+/*    font-family: inherit;*/
+/*    font-size: inherit;*/
+/*    line-height: inherit;*/
+/*    position: sticky;*/
+/*    left: 40px;*/
+/*    background: #AB0404;*/
+/*    border-radius: 10px;*/
+/*    border-color: darkred;*/
+/*}*/
+
+/*.remBtn {*/
+/*    margin: 0;*/
+/*    font-family: inherit;*/
+/*    font-size: inherit;*/
+/*    line-height: inherit;*/
+/*     background: #AB0404;*/
+/*    border-radius: 10px;*/
+/*    border-color: darkred;*/
+/*}*/
